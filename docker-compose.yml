@@ -1,0 +1,35 @@
+version: '3.8'
+
+services:
+  # PHP Application Server (Laravel)
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: vra-app:latest
+    container_name: vra-app
+    restart: unless-stopped
+    working_dir: /var/www/html
+    volumes:
+      - .:/var/www/html
+    networks:
+      - vra-network
+
+  # Nginx Web Server
+  web:
+    image: nginx:alpine
+    container_name: vra-web
+    restart: unless-stopped
+    ports:
+      - "8000:80"
+    volumes:
+      - .:/var/www/html
+      - ./docker/nginx.conf:/etc/nginx/conf.d/default.conf
+    depends_on:
+      - app
+    networks:
+      - vra-network
+
+networks:
+  vra-network:
+    driver: bridge
