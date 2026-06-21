@@ -14,7 +14,10 @@
 <body>
     <div id="preloader">
         <div class="preloader-inner">
-            <div class="preloader-logo">VRA</div>
+            <div class="preloader-logo" style="display: inline-flex; align-items: center; gap: 1rem;">
+                <img src="{{ asset('images/vra-logo.jpg') }}" alt="VRA Logo" style="height: 48px; width: 48px; border-radius: 12px; border: 2px solid rgba(167, 139, 250, 0.4); box-shadow: 0 0 20px rgba(167, 139, 250, 0.3); object-fit: cover;">
+                <span style="background: linear-gradient(135deg, var(--color-accent), var(--color-accent-2)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">VRA</span>
+            </div>
             <div class="preloader-bar"><div class="preloader-progress"></div></div>
             <div class="preloader-text">Initializing Experience...</div>
         </div>
@@ -22,7 +25,10 @@
     <canvas id="particle-canvas"></canvas>
     <nav id="main-nav">
         <div class="nav-inner">
-            <a href="/" class="nav-logo">VRA</a>
+            <a href="/" class="nav-logo" style="display: inline-flex; align-items: center; gap: 0.75rem; vertical-align: middle;">
+                <img src="{{ asset('images/vra-logo.jpg') }}" alt="VRA Logo" style="height: 32px; width: 32px; border-radius: 8px; border: 1.5px solid rgba(167, 139, 250, 0.3); box-shadow: 0 0 12px rgba(167, 139, 250, 0.2); object-fit: cover;">
+                <span style="background: linear-gradient(135deg, var(--color-accent), var(--color-accent-2)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">VRA</span>
+            </a>
             <div class="nav-links">
                 <a href="/" class="nav-link active">Home</a>
                 <a href="/about" class="nav-link">About</a>
@@ -46,7 +52,10 @@
         <div class="footer-content">
             <div class="footer-grid">
                 <div class="footer-col footer-brand">
-                    <div class="footer-logo">VRA</div>
+                    <div class="footer-logo" style="display: inline-flex; align-items: center; gap: 0.75rem;">
+                        <img src="{{ asset('images/vra-logo.jpg') }}" alt="VRA Logo" style="height: 38px; width: 38px; border-radius: 8px; border: 1.5px solid rgba(167, 139, 250, 0.3); box-shadow: 0 0 12px rgba(167, 139, 250, 0.2); object-fit: cover;">
+                        <span style="background: linear-gradient(135deg, var(--color-accent), var(--color-accent-2)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">VRA</span>
+                    </div>
                     <p class="footer-desc">Building the future of digital innovation. Transforming ideas into extraordinary digital experiences.</p>
                     <div class="footer-social">
                         <a href="#" class="social-link" aria-label="Twitter"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
