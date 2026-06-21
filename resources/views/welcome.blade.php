@@ -33,7 +33,7 @@
                 <div class="avatar-container">
                     <div class="avatar-glow"></div>
                     <div class="avatar-border-rotate"></div>
-                    <img src="https://api.dicebear.com/7.x/bottts/svg?seed=Langgeng" alt="Langgeng Yongi Surya" class="avatar-img">
+                    <img src="{{ asset('images/langgeng.jpeg') }}" alt="Langgeng Yongi Surya" class="avatar-img" style="object-fit: cover;">
                 </div>
                 <h3 class="team-name">Langgeng Yongi Surya</h3>
                 <p class="team-id">102022300019</p>
@@ -45,7 +45,7 @@
                 <div class="avatar-container">
                     <div class="avatar-glow"></div>
                     <div class="avatar-border-rotate"></div>
-                    <img src="https://api.dicebear.com/7.x/bottts/svg?seed=Viyendra" alt="Muhammad Viyendra" class="avatar-img">
+                    <img src="{{ asset('images/viyendra.jpeg') }}" alt="Muhammad Viyendra" class="avatar-img" style="object-fit: cover;">
                 </div>
                 <h3 class="team-name">Muhammad Viyendra</h3>
                 <p class="team-id">102022300004</p>
@@ -57,7 +57,7 @@
                 <div class="avatar-container">
                     <div class="avatar-glow"></div>
                     <div class="avatar-border-rotate"></div>
-                    <img src="https://api.dicebear.com/7.x/bottts/svg?seed=Dara" alt="Dara Saifah Mahiroh" class="avatar-img">
+                    <img src="{{ asset('images/dara.jpeg') }}" alt="Dara Saifah Mahiroh" class="avatar-img" style="object-fit: cover;">
                 </div>
                 <h3 class="team-name">Dara Saifah Mahiroh</h3>
                 <p class="team-id">112313134543</p>
@@ -81,7 +81,7 @@
                 <div class="avatar-container">
                     <div class="avatar-glow"></div>
                     <div class="avatar-border-rotate"></div>
-                    <img src="https://api.dicebear.com/7.x/bottts/svg?seed=Ahmad" alt="Ahmad Fathurrohman" class="avatar-img">
+                    <img src="{{ asset('images/ahmad.jpg') }}" alt="Ahmad Fathurrohman" class="avatar-img" style="object-fit: cover;">
                 </div>
                 <h3 class="team-name">Ahmad Fathurrohman</h3>
                 <p class="team-id">102022300218</p>
