@@ -60,7 +60,7 @@
                     <img src="{{ asset('images/dara.jpeg') }}" alt="Dara Saifah Mahiroh" class="avatar-img" style="object-fit: cover;">
                 </div>
                 <h3 class="team-name">Dara Saifah Mahiroh</h3>
-                <p class="team-id">112313134543</p>
+                <p class="team-id">102022330396</p>
                 <span class="team-role">UI/UX & Writing</span>
             </div>
 
