@@ -53,8 +53,8 @@
         transition: border-color 0.3s ease;
     }
 
-    .about-visual:hover .holo-logo {
-        border-color: var(--color-accent);
+    .about-visual:hover img {
+        transform: scale(1.05);
     }
 
     /* Decorative rotating technology circles */
@@ -93,24 +93,20 @@
     <div class="page-header reveal">
         <span class="section-label">Tentang Kami</span>
         <h1 class="section-title">We Are <span class="gradient-text">VRA Service</span></h1>
-        <p class="section-desc">Penyedia jasa joki tugas akademik, gaming, logistik, dan praktikal terbaik di Konoha.</p>
+        <p class="section-desc" style="margin: 0 auto; text-align: center;">Penyedia jasa joki tugas akademik, gaming, logistik, dan praktikal terbaik di Konoha.</p>
     </div>
 
     <div class="section-inner reveal">
         <div class="about-content">
-            <!-- Left Side: Interactive Holographic Logo Display -->
-            <div class="about-visual" data-tilt style="cursor: pointer; box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3); border-color: rgba(255,255,255,0.05);">
-                <div class="about-visual-inner">
-                    <div class="about-orb" style="opacity: 0.5; filter: blur(50px); width: 220px; height: 220px;"></div>
+            <!-- Left Side: Full Visual Logo Display -->
+            <div class="about-visual" data-tilt style="cursor: pointer; box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4); border-color: rgba(255,255,255,0.08); overflow: hidden;">
+                <div class="about-visual-inner" style="padding: 0;">
+                    <!-- Full Image Logo -->
+                    <img src="{{ asset('images/vra-logo.jpg') }}" alt="VRA Brand Logo" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s var(--transition-smooth); border-radius: var(--radius-lg);">
                     
-                    <!-- Tech decorative rings -->
-                    <div class="tech-circle tech-circle-1"></div>
-                    <div class="tech-circle tech-circle-2"></div>
-                    
-                    <!-- The generated VRA Logo -->
-                    <div class="logo-display-wrapper" style="position: relative; z-index: 2; display: flex; flex-direction: column; align-items: center; gap: 1.25rem;">
-                        <img src="{{ asset('images/vra-logo.jpg') }}" alt="VRA Brand Logo" class="holo-logo">
-                        <span class="gradient-text" style="font-weight: 900; font-size: 1.35rem; letter-spacing: 0.15em; filter: drop-shadow(0 0 8px rgba(167,139,250,0.3));">VRA SYSTEM</span>
+                    <!-- Overlay Glow and Title -->
+                    <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(10, 12, 16, 0.85) 0%, rgba(10, 12, 16, 0.2) 60%, transparent 100%); z-index: 2; display: flex; flex-direction: column; justify-content: flex-end; align-items: center; padding: 2rem;">
+                        <span class="gradient-text" style="font-weight: 900; font-size: 1.45rem; letter-spacing: 0.2em; filter: drop-shadow(0 0 10px rgba(167,139,250,0.4));">VRA SYSTEM</span>
                     </div>
                 </div>
             </div>
