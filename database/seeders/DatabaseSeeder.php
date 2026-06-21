@@ -53,41 +53,43 @@ class DatabaseSeeder extends Seeder
             );
         }
 
-        // Seed initial projects
-        Project::updateOrCreate(
-            ['title' => 'VRA Platform Containerization'],
-            [
-                'description' => 'Dockerize the main Laravel application using Alpine Linux and PHP 8.4-FPM.',
-                'category' => 'cloud',
-                'status' => 'completed'
-            ]
-        );
+        // Clear existing projects first to fresh-seed
+        Project::truncate();
 
-        Project::updateOrCreate(
-            ['title' => 'AWS Application Load Balancer Setup'],
-            [
-                'description' => 'Configure multi-instance routing with Target Groups and Sticky Sessions for high availability.',
-                'category' => 'cloud',
-                'status' => 'completed'
-            ]
-        );
+        // Seed VRA Joki Orders
+        Project::create([
+            'title' => 'Joki Laravel Expert & Dashboard',
+            'description' => 'Membuat Sistem Informasi Inventory berbasis Laravel 11 dengan dashboard chart interaktif.',
+            'category' => 'development',
+            'status' => 'completed'
+        ]);
 
-        Project::updateOrCreate(
-            ['title' => 'Security Group Hardening'],
-            [
-                'description' => 'Restrict EC2 instance direct access and only allow inbound HTTP requests from the ALB Security Group.',
-                'category' => 'security',
-                'status' => 'in_progress'
-            ]
-        );
+        Project::create([
+            'title' => 'Joki Bawa Motor Bandung-Jakarta',
+            'description' => 'Mengirim dan mengendarai motor NMAX dari Pasteur Bandung ke Tebet Jakarta Selatan.',
+            'category' => 'cloud', // using cloud category as logistical placeholder
+            'status' => 'completed'
+        ]);
 
-        Project::updateOrCreate(
-            ['title' => 'Glassmorphic Front-End Upgrades'],
-            [
-                'description' => 'Implement premium UI components inspired by Igloo.inc with rotate glowing borders and mouse-tilt effects.',
-                'category' => 'design',
-                'status' => 'planning'
-            ]
-        );
+        Project::create([
+            'title' => 'Joki Skripsi & Data Mining',
+            'description' => 'Implementasi algoritma K-Means Clustering untuk analisis data kependudukan desa Konoha.',
+            'category' => 'development',
+            'status' => 'in_progress'
+        ]);
+
+        Project::create([
+            'title' => 'Joki Valorant: Platinum to Diamond',
+            'description' => 'Push rank akun client dari Platinum 2 ke Diamond 1 menggunakan Agent Reyna/Jett.',
+            'category' => 'security', // using security category as gaming placeholder
+            'status' => 'in_progress'
+        ]);
+
+        Project::create([
+            'title' => 'Joki Desain UI/UX Landing Page',
+            'description' => 'Desain Wireframe dan High-Fidelity Prototype untuk portal perizinan Pemerintah Konoha.',
+            'category' => 'design',
+            'status' => 'planning'
+        ]);
     }
 }
