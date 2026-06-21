@@ -69,7 +69,7 @@
                 <div class="avatar-container">
                     <div class="avatar-glow"></div>
                     <div class="avatar-border-rotate"></div>
-                    <img src="https://api.dicebear.com/7.x/bottts/svg?seed=Athiyah" alt="Athiyah Naurah Syifa" class="avatar-img">
+                    <img src="{{ asset('images/atiyeuuu.jpeg') }}" alt="Athiyah Naurah Syifa" class="avatar-img" style="object-fit: cover;">
                 </div>
                 <h3 class="team-name">Athiyah Naurah Syifa</h3>
                 <p class="team-id">102022300012</p>
