@@ -8,9 +8,89 @@
         <div class="hero-badge"><span class="hero-badge-dot"></span>Now Live — Platform v3.0</div>
         <h1 class="hero-title">Building the Future<br>of <span class="gradient-text glitch-text">Digital Innovation</span></h1>
         <p class="hero-subtitle">We create cutting-edge solutions that transform how people interact with technology. Pioneering the next generation of digital experiences.</p>
-        <div class="hero-actions"><button class="btn-primary"><span>Explore Platform</span></button><button class="btn-secondary">Learn More</button></div>
+        <div class="hero-actions">
+            @auth
+                <a href="/dashboard" class="btn-primary"><span>Access Portal</span></a>
+            @else
+                <a href="/login" class="btn-primary"><span>Client Portal Login</span></a>
+            @endauth
+            <a href="#team" class="btn-secondary">Meet Our Team</a>
+        </div>
     </div>
 </section>
+
+<!-- Meet Our Engineers (Team Section) -->
+<section class="section team-section" id="team">
+    <div class="section-inner">
+        <div class="reveal">
+            <span class="section-label">Our Creators</span>
+            <h2 class="section-title">The VRA Core Team</h2>
+            <p class="section-desc">The engineering team behind the development, dockerization, and load balancer deployment of ViyenRajaAWS platform.</p>
+        </div>
+        <div class="team-grid">
+            <!-- Member 1: Langgeng Yongi Surya -->
+            <div class="team-card reveal" data-tilt>
+                <div class="avatar-container">
+                    <div class="avatar-glow"></div>
+                    <div class="avatar-border-rotate"></div>
+                    <img src="https://api.dicebear.com/7.x/bottts/svg?seed=Langgeng" alt="Langgeng Yongi Surya" class="avatar-img">
+                </div>
+                <h3 class="team-name">Langgeng Yongi Surya</h3>
+                <p class="team-id">102022300019</p>
+                <span class="team-role">Cloud Architect</span>
+            </div>
+
+            <!-- Member 2: Muhammad Viyendra -->
+            <div class="team-card reveal" data-tilt>
+                <div class="avatar-container">
+                    <div class="avatar-glow"></div>
+                    <div class="avatar-border-rotate"></div>
+                    <img src="https://api.dicebear.com/7.x/bottts/svg?seed=Viyendra" alt="Muhammad Viyendra" class="avatar-img">
+                </div>
+                <h3 class="team-name">Muhammad Viyendra</h3>
+                <p class="team-id">102022300004</p>
+                <span class="team-role">DevOps Engineer</span>
+            </div>
+
+            <!-- Member 3: Dara Saifah Mahiroh -->
+            <div class="team-card reveal" data-tilt>
+                <div class="avatar-container">
+                    <div class="avatar-glow"></div>
+                    <div class="avatar-border-rotate"></div>
+                    <img src="https://api.dicebear.com/7.x/bottts/svg?seed=Dara" alt="Dara Saifah Mahiroh" class="avatar-img">
+                </div>
+                <h3 class="team-name">Dara Saifah Mahiroh</h3>
+                <p class="team-id">112313134543</p>
+                <span class="team-role">Full-Stack Engineer</span>
+            </div>
+
+            <!-- Member 4: Athiyah Naurah Syifa -->
+            <div class="team-card reveal" data-tilt>
+                <div class="avatar-container">
+                    <div class="avatar-glow"></div>
+                    <div class="avatar-border-rotate"></div>
+                    <img src="https://api.dicebear.com/7.x/bottts/svg?seed=Athiyah" alt="Athiyah Naurah Syifa" class="avatar-img">
+                </div>
+                <h3 class="team-name">Athiyah Naurah Syifa</h3>
+                <p class="team-id">102022300012</p>
+                <span class="team-role">Database Engineer</span>
+            </div>
+
+            <!-- Member 5: Ahmad Fathurrohman -->
+            <div class="team-card reveal" data-tilt>
+                <div class="avatar-container">
+                    <div class="avatar-glow"></div>
+                    <div class="avatar-border-rotate"></div>
+                    <img src="https://api.dicebear.com/7.x/bottts/svg?seed=Ahmad" alt="Ahmad Fathurrohman" class="avatar-img">
+                </div>
+                <h3 class="team-name">Ahmad Fathurrohman</h3>
+                <p class="team-id">102022300218</p>
+                <span class="team-role">Security Engineer</span>
+            </div>
+        </div>
+    </div>
+</section>
+
 <section class="section" id="features">
     <div class="section-inner">
         <div class="reveal"><span class="section-label">What We Do</span><h2 class="section-title">Crafting Extraordinary<br>Digital Experiences</h2><p class="section-desc">Our platform combines cutting-edge technology with elegant design to deliver solutions that scale with your ambitions.</p></div>
@@ -18,12 +98,10 @@
             <div class="feature-card reveal"><div class="feature-icon">⚡</div><h3 class="feature-title">Lightning Performance</h3><p class="feature-desc">Built for speed with optimized architecture that ensures sub-second response times across all touchpoints.</p></div>
             <div class="feature-card reveal"><div class="feature-icon">🛡️</div><h3 class="feature-title">Enterprise Security</h3><p class="feature-desc">Bank-grade encryption and security protocols protect your data with multi-layer defense systems.</p></div>
             <div class="feature-card reveal"><div class="feature-icon">🔗</div><h3 class="feature-title">Seamless Integration</h3><p class="feature-desc">Connect with your existing tools through our extensive API ecosystem and pre-built connectors.</p></div>
-            <div class="feature-card reveal"><div class="feature-icon">📊</div><h3 class="feature-title">Advanced Analytics</h3><p class="feature-desc">Gain deep insights with real-time dashboards and AI-powered reporting that drives informed decisions.</p></div>
-            <div class="feature-card reveal"><div class="feature-icon">🎨</div><h3 class="feature-title">Design System</h3><p class="feature-desc">A comprehensive design framework that ensures consistency and beauty across every interface.</p></div>
-            <div class="feature-card reveal"><div class="feature-icon">🚀</div><h3 class="feature-title">Global Scale</h3><p class="feature-desc">Deploy worldwide with our distributed infrastructure spanning 50+ regions for minimal latency.</p></div>
         </div>
     </div>
 </section>
+
 <section class="section stats-section">
     <div class="section-inner">
         <div class="stats-grid">
@@ -32,23 +110,6 @@
             <div class="stat-item reveal"><div class="stat-number" data-count="50" data-suffix="+">0</div><div class="stat-label">Global Regions</div></div>
             <div class="stat-item reveal"><div class="stat-number" data-count="24" data-suffix="/7">0</div><div class="stat-label">Expert Support</div></div>
         </div>
-    </div>
-</section>
-<section class="section" id="projects">
-    <div class="section-inner">
-        <div class="reveal"><span class="section-label">Our Ecosystem</span><h2 class="section-title">Products That Define<br>the Future</h2><p class="section-desc">Explore our suite of products designed to power the next generation of digital innovation.</p></div>
-        <div class="projects-grid">
-            <div class="project-card reveal"><div class="project-visual"><div class="project-visual-inner"><div class="project-ice-block"></div></div></div><div class="project-info"><span class="project-tag">Flagship</span><h3 class="project-title">VRA Platform</h3><p class="project-desc">Our core platform providing end-to-end digital solutions with enterprise-grade reliability and consumer-grade simplicity.</p></div></div>
-            <div class="project-card reveal"><div class="project-visual"><div class="project-visual-inner"><div class="project-ice-block"></div></div></div><div class="project-info"><span class="project-tag">Infrastructure</span><h3 class="project-title">VRA Cloud</h3><p class="project-desc">Distributed cloud infrastructure optimized for performance and scalability.</p></div></div>
-            <div class="project-card reveal"><div class="project-visual"><div class="project-visual-inner"><div class="project-ice-block"></div></div></div><div class="project-info"><span class="project-tag">Developer Tools</span><h3 class="project-title">VRA SDK</h3><p class="project-desc">Comprehensive developer toolkit with APIs, SDKs, and documentation for seamless integration.</p></div></div>
-        </div>
-    </div>
-</section>
-<section class="section cta-section">
-    <div class="section-inner reveal">
-        <h2 class="cta-title">Ready to Build<br>the <span class="gradient-text">Future</span>?</h2>
-        <p class="cta-desc">Join thousands of innovators already transforming their digital presence with VRA.</p>
-        <div class="hero-actions"><button class="btn-primary"><span>Start Free Trial</span></button><button class="btn-secondary">Schedule Demo</button></div>
     </div>
 </section>
 @endsection

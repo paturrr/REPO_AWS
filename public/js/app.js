@@ -31,4 +31,22 @@ document.querySelectorAll('.nav-link').forEach(link=>{link.classList.remove('act
 
 const contactForm=document.querySelector('.contact-form');
 if(contactForm){contactForm.addEventListener('submit',(e)=>{e.preventDefault();const btn=contactForm.querySelector('.btn-primary');const originalText=btn.querySelector('span').textContent;btn.querySelector('span').textContent='Sent!';btn.style.background='linear-gradient(135deg,#22c55e,#16a34a)';setTimeout(()=>{btn.querySelector('span').textContent=originalText;btn.style.background='';contactForm.reset()},3000)})}
+
+// Interactive 3D Card Tilt Effect
+const tiltCards = document.querySelectorAll('[data-tilt]');
+tiltCards.forEach(card => {
+    card.addEventListener('mousemove', (e) => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        const xc = rect.width / 2;
+        const yc = rect.height / 2;
+        const angleX = (yc - y) / 10;
+        const angleY = (x - xc) / 10;
+        card.style.transform = `translateY(-8px) rotateX(${angleX}deg) rotateY(${angleY}deg) scale(1.02)`;
+    });
+    card.addEventListener('mouseleave', () => {
+        card.style.transform = 'translateY(0) rotateX(0) rotateY(0) scale(1)';
+    });
+});
 });
