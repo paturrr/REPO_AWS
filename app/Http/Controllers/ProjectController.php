@@ -27,7 +27,7 @@ class ProjectController extends Controller
         $validated = $request->validate([
             'title' => 'required|max:255',
             'description' => 'nullable',
-            'category' => 'required|in:development,design,cloud,security',
+            'category' => 'required|in:coding,academic,design,gaming,logistics,driving,athletics',
             'status' => 'required|in:planning,in_progress,completed',
         ]);
 

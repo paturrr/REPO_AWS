@@ -60,28 +60,28 @@ class DatabaseSeeder extends Seeder
         Project::create([
             'title' => 'Joki Laravel Expert & Dashboard',
             'description' => 'Membuat Sistem Informasi Inventory berbasis Laravel 11 dengan dashboard chart interaktif.',
-            'category' => 'development',
+            'category' => 'coding',
             'status' => 'completed'
         ]);
 
         Project::create([
             'title' => 'Joki Bawa Motor Bandung-Jakarta',
             'description' => 'Mengirim dan mengendarai motor NMAX dari Pasteur Bandung ke Tebet Jakarta Selatan.',
-            'category' => 'cloud', // using cloud category as logistical placeholder
+            'category' => 'logistics',
             'status' => 'completed'
         ]);
 
         Project::create([
             'title' => 'Joki Skripsi & Data Mining',
             'description' => 'Implementasi algoritma K-Means Clustering untuk analisis data kependudukan desa Konoha.',
-            'category' => 'development',
+            'category' => 'academic',
             'status' => 'in_progress'
         ]);
 
         Project::create([
             'title' => 'Joki Valorant: Platinum to Diamond',
             'description' => 'Push rank akun client dari Platinum 2 ke Diamond 1 menggunakan Agent Reyna/Jett.',
-            'category' => 'security', // using security category as gaming placeholder
+            'category' => 'gaming',
             'status' => 'in_progress'
         ]);
 

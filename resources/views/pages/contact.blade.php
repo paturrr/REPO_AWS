@@ -648,7 +648,7 @@
                 <!-- Interactive Form -->
                 <form class="contact-form" id="vraContactForm">
                     @csrf
-                    <input type="hidden" id="service_category" name="category" value="development">
+                    <input type="hidden" id="service_category" name="category" value="coding">
                     
                     <div class="form-group">
                         <label for="client_name">Nama Lengkap / Alias</label>
@@ -773,10 +773,10 @@
 
         // Dynamic categories details
         const categoriesMapping = {
-            'coding': { category: 'development', label: 'Coding / IT' },
-            'skripsi': { category: 'design', label: 'UI/UX & Writing' },
-            'gaming': { category: 'security', label: 'Game Joki' }, // Map to security / cloud or map cleanly
-            'logistics': { category: 'cloud', label: 'Logistik / Lari' }
+            'coding': { category: 'coding', label: 'Coding / IT' },
+            'skripsi': { category: 'academic', label: 'UI/UX & Writing' },
+            'gaming': { category: 'gaming', label: 'Game Joki' },
+            'logistics': { category: 'logistics', label: 'Logistik / Lari' }
         };
 
         // Service selector tags event

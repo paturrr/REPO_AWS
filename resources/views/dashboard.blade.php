@@ -2,6 +2,17 @@
 @section('title', 'Dashboard - VRA Control Center')
 @section('content')
 <div class="dashboard-wrapper">
+@php
+    $categoryLabels = [
+        'coding' => '💻 Coding',
+        'academic' => '🎓 Skripsi',
+        'design' => '🎨 UI/UX',
+        'gaming' => '🎮 Game',
+        'logistics' => '🏍️ Logistik',
+        'driving' => '🚗 Driving',
+        'athletics' => '🏃‍♂️ Lari',
+    ];
+@endphp
     <!-- Header -->
     <div class="dashboard-header reveal">
         <div>
@@ -66,10 +77,13 @@
                         <div class="form-group half">
                             <label for="category">Category</label>
                             <select id="category" name="category" required>
-                                <option value="development">Development</option>
-                                <option value="design">Design</option>
-                                <option value="cloud">Cloud</option>
-                                <option value="security">Security</option>
+                                <option value="coding">💻 Joki Coding (Laravel/IT)</option>
+                                <option value="academic">🎓 Joki Skripsi & Akademik</option>
+                                <option value="design">🎨 Joki UI/UX (Figma)</option>
+                                <option value="gaming">🎮 Joki Game (Valo/MC)</option>
+                                <option value="logistics">🏍️ Joki Logistik & Paket</option>
+                                <option value="driving">🚗 Joki Driver / Menyetir</option>
+                                <option value="athletics">🏃‍♂️ Joki Balap Lari by Lang</option>
                             </select>
                         </div>
                         <div class="form-group half">
@@ -100,7 +114,7 @@
                     @foreach ($projects as $project)
                         <div class="project-board-card">
                             <div class="card-header">
-                                <span class="project-board-tag tag-{{ $project->category }}">{{ $project->category }}</span>
+                                <span class="project-board-tag tag-{{ $project->category }}">{{ $categoryLabels[$project->category] ?? ucfirst($project->category) }}</span>
                                 <span class="project-board-status status-{{ $project->status }}">{{ str_replace('_', ' ', $project->status) }}</span>
                             </div>
                             

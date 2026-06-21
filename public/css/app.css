@@ -472,9 +472,15 @@ img{max-width:100%;display:block}
     border-radius: var(--radius-full);
 }
 .tag-development { background: rgba(108,123,255,0.15); color: #818cf8; }
-.tag-design { background: rgba(167,139,250,0.15); color: #c084fc; }
+.tag-coding { background: rgba(108,123,255,0.15); color: #818cf8; }
+.tag-academic { background: rgba(167,139,250,0.15); color: #c084fc; }
+.tag-design { background: rgba(236,72,153,0.15); color: #f472b6; }
+.tag-gaming { background: rgba(16,185,129,0.15); color: #34d399; }
+.tag-logistics { background: rgba(34,211,238,0.15); color: #22d3ee; }
 .tag-cloud { background: rgba(34,211,238,0.15); color: #22d3ee; }
 .tag-security { background: rgba(244,114,182,0.15); color: #f472b6; }
+.tag-driving { background: rgba(245,158,11,0.15); color: #fbbf24; }
+.tag-athletics { background: rgba(239,68,68,0.15); color: #f87171; }
 
 .project-board-status {
     font-size: 0.7rem;
