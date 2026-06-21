@@ -584,3 +584,24 @@ img{max-width:100%;display:block}
         grid-template-columns: 1fr;
     }
 }
+
+/* Centering & Premium design adjustments for login card */
+.login-wrapper {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    min-height: 80vh !important;
+    width: 100%;
+}
+.login-card {
+    border: 1px solid rgba(168, 85, 247, 0.25) !important;
+    background: rgba(18, 21, 32, 0.7) !important;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5), 0 0 50px rgba(168, 85, 247, 0.1) !important;
+}
+.login-form-element .form-group {
+    margin-bottom: 1.25rem;
+}
+.login-form-element input {
+    margin-top: 0.5rem;
+    width: 100%;
+}
